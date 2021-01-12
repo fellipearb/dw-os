@@ -28,13 +28,24 @@ function Login() {
                         <p className="welcome-text">Olá, seja bem vindo, para começar digite seu login e senha</p>
 
                         <div className="container--input">
-                            <label htmlFor="email">E-mail</label>
-                            <Input id="email" name="email" value={email} onChange={onChangeEmail} />
+                            <Input
+                                id="email"
+                                name="email"
+                                value={email}
+                                onChange={onChangeEmail} 
+                                label="E-mail"
+                            />
                         </div>
 
                         <div className="container--input">
-                            <label htmlFor="password">Senha</label>
-                            <Input id="password" name="password" type="password" value={password} onChange={onChangePassword} />
+                            <Input
+                                id="password"
+                                name="password"
+                                type="password"
+                                value={password}
+                                onChange={onChangePassword} 
+                                label="Senha"
+                            />
                         </div>
                         
                         <button className="btn">Login</button>
