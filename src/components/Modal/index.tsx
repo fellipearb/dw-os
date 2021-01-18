@@ -1,8 +1,9 @@
 import React from 'react';
 import Modal from './index.style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IModal } from './IModal';
 
-const ModalComponent: React.FC<any> = (props) => {
+const ModalComponent: React.FC<any> = (props: IModal) => {
   const { 
     children, 
     open, 
