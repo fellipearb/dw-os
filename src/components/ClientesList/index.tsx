@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Table from '../ResultList/index.style';
 import Modal from '../Modal';
 import Input from '../Input';
+import Button from '../Button';
 
 const ClientListComponent: React.FC<any> = (props) => {
     const { results } = props;
@@ -73,7 +74,7 @@ const ClientListComponent: React.FC<any> = (props) => {
             </Modal>
 
             <div className="controlHeader">
-                <button onClick={handleOpenModal}>Adicionar Cliente</button>
+                <Button onClick={handleOpenModal}>Adicionar Cliente</Button>
             </div>
 
             <Table>
